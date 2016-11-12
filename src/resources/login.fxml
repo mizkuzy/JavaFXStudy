@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.stage.Stage?>
+<?import javafx.scene.Scene?>
+<Stage title="rukojop"
+       xmlns:fx="http://javafx.com/fxml/1" fx:controller="java.lucy.Login.Controller">
+    <scene>
+        <Scene>
+            <GridPane alignment="center" hgap="10" prefHeight="205.0" prefWidth="347.0" vgap="10"
+                      xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+                <padding>
+                    <Insets bottom="10" left="25" right="25" top="25"/>
+                </padding>
+                <children>
+                    <Label text="Company ID" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                    <Label text="User name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                    <CheckBox text="Remember me" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <children>
+                            <Button onAction="#" text="Cancel"/>
+                            <Button onAction="#" text="Login"/>
+                        </children>
+                    </HBox>
+
+                    <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                </children>
+            </GridPane>
+        </Scene>
+    </scene>
+</Stage>
